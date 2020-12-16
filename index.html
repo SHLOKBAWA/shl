@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>British Columbia</title>
+	
+	<!-- Linking StyleSheets -->
+	
+	<link href="bc_reset.css" rel="stylesheet" />
+	<link href="bc_grids.css" rel="stylesheet" />
+	<link href="bc_style.css" rel="stylesheet" />
+	<link href="bc_formstyle.css" rel="stylesheet" />
+	<link href="bc_mediaquery.css" rel="stylesheet" />
+	
+	<!-- Adding Icon hyperlink -->
+	
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' 
+	integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' 
+	crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
+<body>
+	<header>
+	
+	<!-- Slider -->
+	<div style="margin-left:0; margin-right:0;" class="row">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <img src="bc_image1.png" style="width:100%;">
+		</div>
+		<div class="mySlides fade">
+		  <video preload="auto" loop="" autoplay="" muted style="visibility: visible; width: 100%;">
+			<source src="bc_v1.mp4" type="video/mp4" >
+		  </video>
+		</div>
+		<div class="mySlides fade">
+		  <video preload="auto" loop="" autoplay="" muted style="visibility: visible; width: 100%;">
+			<source src="bc_v2.mp4" type="video/mp4" >
+		  </video>
+		</div>
+		<div class="mySlides fade">
+		  <video preload="auto" loop="" autoplay="" muted style="visibility: visible; width: 100%;">
+			<source src="bc_v3.mp4" type="video/mp4" >
+		  </video>
+		</div>
+	</div>
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+	
+	<!-- Navigation List Along with logo -->
+	<div class="logorow">
+		<div class="col-1-4">
+		  <a href="index.html"><img id="logo" src="bc_logo.png" /></a>	
+		</div>
+		<div class="col-3-4">
+			<nav>
+			  <ul>
+				<li><a target=_blank class="expand"  href="bc_explore.html">Explore</a></li>
+				<li><a target=_blank class="expand" href="bc_things.html">Things to do</a></li>
+				<li style="margin-right: 40px;"><a target=_blank class="expand" href="bc_places.html">Where to stay</a></li>
+				<div>
+				<a href="#"><i onclick="openNav()" id="icon" class="fas fa-search hovicon effect-2 sub-a" style="font-size:30px; color:#32743D;"></i></a>
+				<a href="#"><i onclick="openFav()" id="icon" class="fas fa-heart hovicon effect-2 sub-a" style="font-size:30px; color:#32743D;"></i></a>
+				<a href="#"><i onclick="openList()" id="icon" class="fas fa-shopping-bag hovicon effect-2 sub-a" style="font-size:30px; color:#32743D;"></i></a>
+				<a href="#"><i onclick="openSign()" id="icon" class="fas fa-user hovicon effect-2 sub-a" style="font-size:30px; color:#32743D;"></i></a>
+				</div>
+		      </ul>	
+			</nav>
+		</div>
+	</div>
+	</div>
+	<div class="top-right">
+		<nav>
+		  <ul>
+			<li><a href="#">TOURIST</a></li>
+			<li><a href="#">MEETING</a></li>
+			<li><a href="#">SPORTING EVENT</a></li>
+			<li><a href="#">TRAVEL TRADE</a></li>
+			<li><a href="#">MEDIA</a></li>
+			<li><a href="#">INDUSTRY</a></li>
+			<li><a href="#">ABOUT US</a></li>
+		  </ul>
+		</nav>
+	</div>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+	  <form action="/action_page.php">
+		  <input style="margin-bottom: 1%;" type="text" placeholder="Search.." name="search">
+		  <button style="background:#32743D;"type="submit"><i style="color:white;" class="fa fa-search"></i></button>
+	  </form>
+	  </div>
+	</div>
+	<div id="myFav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeFav()">&times;</a>
+	  <div class="overlay-content">
+	  <form action="/action_page.php">
+		  <input style="margin-bottom: 1%;border-radius:10px 10px; height:100px;" type="text" placeholder="Enter your experience" name="search">
+		  <button style="background:#32743D; color:white;border-radius:10px 10px;"type="submit">Submit</button>
+	  </form>
+	  </div>
+	</div>
+	<div id="myList" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeList()">&times;</a>
+	  <div class="overlay-content">
+	  <form action="/action_page.php">
+		  <input style="margin-bottom: 1%;border-radius:10px 10px; height:100px;" type="text" placeholder="Name the places you visited after using our website" name="search">
+		  <button style="background:#32743D; color:white;border-radius:10px 10px;"type="submit">Submit</button>
+	  </form>
+	  </div>
+	</div>
+	<div id="myAccount" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeSign()">&times;</a>
+	  <div class="overlay-content">
+	  <form action="/action_page.php">
+		<input style="margin-bottom:1%;" type="text" placeholder="Username" name="username">
+		<input style="margin-bottom: 1%;"type="text" placeholder="Password" name="password">
+		<button style="background:#32743D; color:white;" type="submit">Sign In</button>
+	  </form>
+	  </div>
+	</div>
+	
+	</header>
+	
+	<!-- Contents of the Home Page -->
+		<div id="sect1" class="row">
+			<p id="p1">British Columbia's untamed nature speaks to the soul. 
+			Our vast landscape inspires introspective personal journeys 
+			and unbridled adventures. Our people connect explorers 
+			with unexpected moments that renew the human spirit. Our 
+			cities, set on the doorstep of the wild, make it easy to step 
+			further into nature and explore the endless possibilities of the outdoors.</p>
+	</div>
+	<div style="height:750px;" class="row">
+		<div class="col-1-2">
+			<p id="p2" style="font-family: deep;">EVERY JOURNEY STARTS WITH A STORY</p><br/>
+			<p id="p2" style="font-size:2em;">Stories of the ancient rainforests, colossal mountain peaks,
+			and remote towns of British Columbia have been passed around 
+			campfires and barstools for centuries. See how BC's rugged 
+			nature has reconnected explorers to the wild within 
+			and gather the kindling to spark your next adventure.</p>
+		</div>
+		<div class="col-1-2" id="col-1-2">
+			<img class="under" src="bc_rocky.jpeg" />
+			<img class="over" src="bc_hiking.jpeg" />
+		</div>
+	</div>
+	<div style="height:700px;" class="row">
+		<div class="col-2-3">
+			<img src="bc_nature.jpg" />
+		</div>
+		<div class="col-1-3">
+			<p id="p2" style="font-family: deep;">WHERE NATURE IS NURTURED</p><br/>
+			<p id="p2" style="font-size:2em;">From massive mountain ranges 
+			and windswept beaches to rainforests overflowing 
+			with life, BC's cities and towns share a deep 
+			connection to the wild that surrounds them. 
+			Find one that calls to you.</p>
+		</div>
+	</div>
+
+	<div style="height:700px;" class="row">
+		<div class="col-1-3">
+		  <p id="p2" style="font-family: deep;">LIMITLESS NATURE, VIBRANT CULTURE</p><br/>
+		  <p id="p2" style="font-size: 2em;">Feel your breath pause when a 
+		  bear lumbers into sight along a rocky shore, or a humpback 
+		  whale gracefully flips its tail in the Pacific Ocean. 
+		  Touch calm waters as you paddle a canoe across a 
+		  glacial lake, or dip into a natural hot spring.</p>
+		</div>
+		<div class="col-2-3">
+		  <img src="bc_culture.jpg" />
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer id="foot">
+	  <div class="row">
+		<div class="col-1-3">
+		  <h3 style="font-family: deep;">Quick Links</h3>
+		  <nav>
+		    <ul>
+			  <li><a href="">About Us</a></li>
+			  <li><a href="">Industry</a></li>
+			  <li><a href="">Media</a></li>
+			  <li><a href="">Travel Trade</a></li>
+			  <li><a href="">Sporting Event</a></li>
+			  <li><a href="">Meeting</a></li>
+			  <li><a href="">Tourist</a></li>
+			</ul>
+		  </nav>
+		</div>
+		<div class="col-1-3">
+		  <h3 style="font-family: deep;">Other Sites</h3>
+		  <nav>
+		    <ul>
+			  <li><a target=_blank href="https://www.destinationbc.ca/Global-Marketing-Partnerships.aspx">Travel Trade</a></li>
+			  <li><a target=_blank href="http://travelmedia.hellobc.com/">Travel Media</a></li>
+			  <li><a target=_blank href="https://www.destinationbc.ca/Global-Marketing-Partnerships.aspx">Destination BC Corporate</a></li>
+			</ul>
+		  </nav>
+		</div>
+		<div class="col-1-3">
+		  <h3 style="font-family: deep;">Partner Sites</h3>
+		  <nav>
+		    <ul>
+			  <li><a target=_blank href="https://www.britishcolumbia.ca/">Travel & Invest BC</a></li>
+			  <li><a target=_blank href="https://workbc.ca/">WorkBC.ca</a></li>
+			  <li><a target=_blank href="https://www.welcomebc.ca/">WelcomeBC.ca</a></li>
+			</ul>
+		  </nav>
+		</div>
+	  </div>
+	  <div class="row">
+	    <p style="font-size:2em; margin-top:5%; text-align:center;margin-bottom:2%;">@Copyright</p>
+	  </div>
+	</footer>
+	
+	<!-- JavaScript -->
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+			   slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 9000);
+		}
+	</script>
+	<script>
+		function openNav() {
+		document.getElementById("myNav").style.width = "100%";
+		}
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+		function openSign() {
+		document.getElementById("myAccount").style.width="100%";
+		}
+		function closeSign() {
+		document.getElementById("myAccount").style.width="0%";
+		}
+		function openList() {
+		document.getElementById("myList").style.width="100%";
+		}
+		function closeList() {
+		document.getElementById("myList").style.width="0%";
+		}
+		function openFav() {
+		document.getElementById("myFav").style.width="100%";
+		}
+		function closeFav() {
+		document.getElementById("myFav").style.width="0%";
+		}
+	</script>
+</body>
+
+</html>
